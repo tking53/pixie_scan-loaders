@@ -1,7 +1,7 @@
 #!/bin/bash
 
 data="/scratch3/ornl2016_vandle/micronet3/pixie16/ornl2016/ldf/rb"
-name="094rb_14-full"
+name="094rb_14-full-thirdcal"
 
 cmd="zero\n"
 
