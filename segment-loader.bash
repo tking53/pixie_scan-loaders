@@ -11,12 +11,12 @@ configfile="Config.xml.ThirdCal"
 ln -sf /home/tking/pixie_scan/pixie_ldf_c
 ln -sf $configdir$configfile Config.xml
 
-for j in 01
+for j in {01..02}
 do
     name=$nameS$j
-    echo $name
-    echo "$(<$cmddir/cmd-$j.cmd)" | ./pixie_ldf_c $name
-    gzip $name.his
+  #  echo $name
+    echo "$(<$cmddir/cmd-$j.cmd)" #| ./pixie_ldf_c $name
+#    gzip $name.his
 done
 
-ln -sf /home/tking/pixie_scan/start.cmd
+#ln -sf /home/tking/pixie_scan/start.cmd
